@@ -154,6 +154,38 @@ class _DetailsForMedicialSpeciallistState
                 height: 1,
                 color: Colors.teal,
               ),
+              SizedBox(
+                height:20
+              ),
+              Text("Book Appointment",
+              style: GoogleFonts.poppins(
+                fontSize: 15
+              ),
+              ),
+              MaterialButton(onPressed: (){},
+              color: Colors.green,
+              child: Text("Online Appointment",
+              style: GoogleFonts.poppins(
+                color:Colors.white
+              ),
+              ),
+              
+              ),
+              SizedBox(
+                height: 10,
+              ),
+               
+                  MaterialButton(onPressed: (){},
+                  color: Colors.orange,
+                  child: Text("Offline Appointment",
+                  style: GoogleFonts.poppins(
+                    color:Colors.white
+                  ),
+                  ),
+                  ), 
+
+                  SizedBox(height: 100,)   
+                
             ],
           ),
         ),

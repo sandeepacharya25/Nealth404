@@ -5,7 +5,7 @@ class Hospital {
   String imageUrl;
   String doctors;
   String beds;
-  String phoneNumber;
+  int phoneNumber;
 
   
   Hospital({
@@ -27,8 +27,8 @@ List <Hospital>hospitals(){
       location:"Maharajgunj Rd, Kathmandu",
       imageUrl: "images/tuteaching.jpg",
       doctors: "Dr. Sandeep Acharya",
-      beds: "120 OPD, 50 ICU, 20 Ventilator",
-      phoneNumber: "9815456789"
+      beds: "120 OPD,\n 50 ICU,\n 20 Ventilator",
+      phoneNumber: 9815456789,
     ),
     Hospital(
       name: "Purbanchal Cancer Hospital",
@@ -37,7 +37,7 @@ List <Hospital>hospitals(){
       imageUrl: "images/purbanchal_cancer_hospital.jpg",
        doctors: "",
       beds: "",
-      phoneNumber: "02358726"
+      phoneNumber: 02358726,
 
       
     ),
@@ -48,7 +48,7 @@ List <Hospital>hospitals(){
       imageUrl: "images/birta_city.jpg",
        doctors: "",
       beds: "",
-      phoneNumber: "023589712"
+      phoneNumber: 023589712,
       
     ),
   ];

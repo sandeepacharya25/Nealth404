@@ -33,7 +33,7 @@ List <Doctor> doctors(){
 
     ),
     Doctor(
-      name:"Dr. Asha Basnet",
+      name:"Dr. Alka Dhakal",
       specialist: "Cardialogist",
       qualification: "MD, MBBS",
       experience: "5 years",

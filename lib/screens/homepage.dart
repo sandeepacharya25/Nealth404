@@ -32,17 +32,20 @@ class _HomePageState extends State<HomePage> {
     'Our Pharmacy',
     'Check Hospitals'
   ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        label: Text("Emergency"),
-        icon: Icon(
-          Icons.local_hospital,
-        ),
-        backgroundColor: Colors.red,
-      ),
+      // floatingActionButton: FloatingActionButton.extended(
+      //   onPressed: () {},
+      //   label: Text("Emergency"),
+      //   icon: Icon(
+      //     Icons.local_hospital,
+      //   ),
+      //   backgroundColor: Colors.red,
+      // ),
+      
+      
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
