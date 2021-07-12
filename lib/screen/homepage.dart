@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                   height: 50,
                 ),
                 Text(
-                  "Good Morning, Olivia",
+                  "Good Morning, Alka",
                   style: GoogleFonts.poppins(fontWeight: FontWeight.w300),
                 ),
                 SizedBox(
@@ -128,17 +128,12 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   height: 20,
                 ),
-                Text(
-                  "Some Common Problem",
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Some Comman Problem",
+                      "Some Common Problems",
                       style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                       ),

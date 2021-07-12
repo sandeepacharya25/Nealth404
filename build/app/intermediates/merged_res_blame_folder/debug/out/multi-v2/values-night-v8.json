@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\flutter firebase app\\Nealth404\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "F:\\Nealth404\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "G:\\flutter firebase app\\Nealth404\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "F:\\Nealth404\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
