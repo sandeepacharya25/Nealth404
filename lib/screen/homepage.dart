@@ -1,12 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:hackathon/components/buttonContainer.dart';
+
 import 'package:hackathon/components/hospitalContainer.dart';
 import 'package:hackathon/components/speciallistCard.dart';
 import 'package:hackathon/model/doctor.dart';
 import 'package:hackathon/model/hospitals.dart';
 import 'package:hackathon/model/symptom.dart';
+
+import 'availableMedicialSpeciallist.dart';
+import 'commonProblem.dart';
+import 'describeProblem.dart';
+import 'detailForMedicialSpeciallist.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -84,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                   height: 50,
                 ),
                 Text(
-                  "Good Morning, Alka",
+                  "Good Morning, Olivia",
                   style: GoogleFonts.poppins(fontWeight: FontWeight.w300),
                 ),
                 SizedBox(
@@ -128,19 +135,18 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   height: 20,
                 ),
-              
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Some Common Problems",
+                      "Some Comman Problem",
                       style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     TextButton(
                       onPressed: () {
-                        // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SomeCommon()));
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SomeCommon()));
                       },
                       child: Text(
                         "See All",
@@ -157,19 +163,19 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     child: Row(
                       children: [
-                        commonProblemContainer("Common Cold"),
+                        commonProblemContainer(symptoms()[0],0),
                         SizedBox(
                           width: 20,
                         ),
-                        commonProblemContainer("High Temperature"),
+                        commonProblemContainer(symptoms()[1],1),
                         SizedBox(
                           width: 20,
                         ),
-                        commonProblemContainer("Fever"),
+                        commonProblemContainer(symptoms()[2],2),
                         SizedBox(
                           width: 20,
                         ),
-                        commonProblemContainer("Nack Pain"),
+                       commonProblemContainer(symptoms()[3],3),
                       ],
                     ),
                   ),
@@ -240,8 +246,8 @@ class _HomePageState extends State<HomePage> {
                       // if (index == 2) {
                       //   Navigator.of(context).push(MaterialPageRoute(
                       //       builder: (context) => Pharmacy()));
-                      }
-                    // },
+                      // }
+                    },
                   ),
                 ),
                 SizedBox(
@@ -257,7 +263,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AvailableMedicialSpeciallist()));
+                      },
                       child: Text(
                         "See All",
                         style: GoogleFonts.poppins(
@@ -274,15 +282,21 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      SpeciallistCard(doctor: doctors()[0]),
+                      SpeciallistCard(doctor: doctors()[0],
+                      
+                      onCLick:()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DetailsForMedicialSpeciallist(doctor: doctors()[0],))),),
                       SizedBox(
                         width: 10,
                       ),
-                      SpeciallistCard(doctor: doctors()[1]),
+                      SpeciallistCard(doctor: doctors()[1],
+                      onCLick: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DetailsForMedicialSpeciallist(doctor: doctors()[1],))),
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      SpeciallistCard(doctor: doctors()[2]),
+                      SpeciallistCard(doctor: doctors()[2],
+                      onCLick: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DetailsForMedicialSpeciallist(doctor: doctors()[2],))),
+                      ),
                       SizedBox(width: 10),
                     ],
                   ),
@@ -326,7 +340,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget commonProblemContainer(String title) {
+  Widget commonProblemContainer(Symptom symptom, int index) {
     return InkWell(
       child: Container(
         padding: EdgeInsets.all(8),
@@ -334,9 +348,11 @@ class _HomePageState extends State<HomePage> {
           color: Colors.grey[200],
           borderRadius: BorderRadius.circular(8.0),
         ),
-        child: Text(title),
+        child: Text(symptom.possibleDiseases),
       ),
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DescribeProblem(symptom: symptoms()[index])));
+      },
     );
   }
 }
