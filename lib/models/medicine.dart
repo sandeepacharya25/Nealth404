@@ -1,0 +1,190 @@
+class Medicine {
+  final String medicineName;
+  final String description;
+  final String imageUrl;
+  final String price;
+  final String basicInfo;
+  final String therapeuticUses;
+  final String warningsAndPrecaution;
+  final String interaction;
+  final String directionUses;
+  final String sideEffects;
+  final String storage;
+  final String reference;
+  final List<String> drugStore;
+  Medicine({
+    required this.basicInfo,
+    required this.therapeuticUses,
+    required this.warningsAndPrecaution,
+    required this.interaction,
+    required this.directionUses,
+    required this.sideEffects,
+    required this.storage,
+    required this.reference,
+    required this.medicineName,
+    required this.description,
+    required this.price,
+    required this.drugStore,
+    required this.imageUrl,
+  });
+
+ 
+}
+
+List<Medicine> medicineInfo() {
+  return [
+    Medicine(
+      medicineName: "Amoxicillin Capsules IP 500mg",
+      description: "Amoxicillin- 500 Mg/1 Capsules\n10 tablets",
+      price: "Rs 100",
+      drugStore: ['abc', 'san'],
+      imageUrl: "images/amoxicillin.jpg",
+      basicInfo: "This is basic info",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+    ),
+    Medicine(
+        medicineName: "Azero",
+        description: "Used for nackpain",
+        price: "Rs 100 per 10 tablets",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+    ),
+    Medicine(
+        medicineName: "Brufen Tablets 400mg",
+        description:
+            "used to treat many conditions such as headache, fever, period pain, toothache, colds, and mild arthritis.",
+        price: "Rs 11.3 per 10 tablets",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "ECOSPRIN-75MG",
+        description:
+            "used to bring down high body temperatures and to prevent recurrence of heart attacks or strokes by thinning the blood.",
+        price: "Rs 5.2 per 10 tablets",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "URIMAX-0.4MG",
+        description:
+            "sed in men to help relieve the symptoms of an enlarged prostate ",
+        price: "Rs 19.86 per capsule",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "AVAXIM-80U (HEP-A) INJ",
+        description: "VACCINES AGAINST HEPATITS 'A'",
+        price: "Rs 2,029.86 / AMP",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "A-FENAC PLUS GEL 30G.",
+        description: "NSAIDS/ANTI-PYRETICS/ANALGESIC",
+        price: "Rs 111.60 per tube",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "CRUX SYRUP-100ML",
+        description: "AYURVEDIC PREPARATIONS FOR COUGh",
+        price: "Rs 75 per bottle",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "BIFILAC SACHET",
+        description: "DIETARY SUPPLEMENTS-DIGESTIVE ENZYMES",
+        price: "Rs  23 per sachet",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+    Medicine(
+        medicineName: "WHISPER ULTRA 8'S-GREEN",
+        description: "SANITARY PADS",
+        price: "Rs  120 per PCS",
+        drugStore: ['abc', 'san'],
+        imageUrl: "images/amoxicillin.jpg",
+        basicInfo: "",
+      therapeuticUses: "",
+      warningsAndPrecaution: "",
+      interaction: "",
+      directionUses: "",
+      sideEffects: "",
+      storage: "",
+      reference: "",
+        ),
+  ];
+}

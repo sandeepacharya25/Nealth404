@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackathon/screen/homepage.dart';
-
-void main(){
+import 'package:hackathon/screens/homepage.dart';
+void main() {
   runApp(MyApp());
 }
 

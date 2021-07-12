@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hackathon/model/doctor.dart';
-
+import 'package:hackathon/models/doctor.dart';
 
 class SpeciallistCard extends StatefulWidget {
   const SpeciallistCard({ Key? key,required this.doctor, required this.onCLick  }) : super(key: key);
