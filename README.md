@@ -8,13 +8,7 @@ Team Nealth404 consists of four brothers banded together for the sole purpose of
 
 ### General System Flow
 
-```mermaid
-graph LR
-A[APP] -- REGISTERED<br>USER --> B(LIMITATIONS)
-A -- UNREGISTERED<br>USER --> C(NO LIMITATIONS)
-B --> D{ONLINE HEALTH<br>SERVICE}
-C --> D
-```
+
 
 ## Framework
 
@@ -28,4 +22,3 @@ The code is contributed by:
 - Sandeep Acharya
 - Bishwa Kiran Poudel
 - Pukar Bajgain
-
