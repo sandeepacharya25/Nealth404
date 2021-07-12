@@ -1,0 +1,4 @@
+#Mon Jul 12 12:50:30 NPT 2021
+base.0=G\:\\flutter firebase app\\Nealth404\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
