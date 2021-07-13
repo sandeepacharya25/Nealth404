@@ -4,8 +4,10 @@ import 'package:hackathon/components/buttonContainer.dart';
 import 'package:hackathon/components/categoriesButton.dart';
 import 'package:hackathon/components/login.dart';
 import 'package:hackathon/components/search_bar.dart';
+import 'package:hackathon/models/personalcare.dart';
 import 'package:hackathon/screens/findmedicine.dart';
 import 'package:hackathon/screens/medicineReminder.dart';
+import 'package:hackathon/screens/productsofPersonalCare.dart';
 import 'package:hackathon/screens/setPrescription.dart';
 
 class Pharmacy extends StatelessWidget {
@@ -58,18 +60,24 @@ class Pharmacy extends StatelessWidget {
                     CategoriesButton(
                       title: "Personal\n   Care",
                       imageUrl: 'images/personalcare.jpg',
+                      onClick: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProductsOfPersonalCare()));
+                      },
                     ),
                     CategoriesButton(
                       title: 'Wellness\n& Fitness',
                       imageUrl: 'images/fitness.jpg',
+                      onClick: (){},
                     ),
                     CategoriesButton(
                       title: "Family\n  Care",
                       imageUrl: "images/familycare.jpg",
+                      onClick: (){},
                     ),
                     CategoriesButton(
                       title: "Ayurvedic",
                       imageUrl: "images/ayurvedic.jpg",
+                      onClick: (){},
                     ),
                   ],
                 ),

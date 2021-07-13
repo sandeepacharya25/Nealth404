@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hackathon/colorComponent.dart';
+import 'package:hackathon/components/buyItems.dart';
 import 'package:hackathon/models/medicine.dart';
 
 class Description extends StatefulWidget {
@@ -77,6 +78,8 @@ class _DescriptionState extends State<Description> {
                     fontSize: 18,
                     fontWeight: FontWeight.w300),
               ),
+              SizedBox(height: 20,),
+              BuyItems(),
               SizedBox(
                 height: 30,
               ),

@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hackathon/screens/emergency.dart';
 import 'package:hackathon/screens/homepage.dart';
 import 'package:hackathon/screens/pharmacy.dart';
 void main() {
@@ -31,7 +32,7 @@ class _NavigationBarState extends State<NavigationBar> {
   final List<Widget> _children = [
     HomePage(),
     Pharmacy(),
-    Text('next'),
+    Text("data"),
     Text('next'),
     Text('next'),
   ];
@@ -59,7 +60,9 @@ class _NavigationBarState extends State<NavigationBar> {
             color: Colors.green[400],
           ),
           RawMaterialButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Emergency()));
+            },
             elevation: 2.0,
             fillColor: Colors.red,
             child: Icon(

@@ -421,15 +421,15 @@ class SearchSymptom extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    throw UnimplementedError();
+    
+    return DescribeProblem(symptom: symptoms()[i]);
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
     final List<Symptom> suggestionList = query.isEmpty
         ? symptoms()
-        : symptoms().where((p) => p.nameOfSymptom[0].indexOf(query)).toList();
+        : symptoms().where((p) => p.nameOfSymptom.startsWith(query)).toList();
 
     return suggestionList.isEmpty
         ? Text(
@@ -440,31 +440,36 @@ class SearchSymptom extends SearchDelegate {
             // itemCount: ,
             itemBuilder: (context, index) {
               final Symptom listitem = suggestionList[index];
-              return ListTile(
-                onTap: () {
-                  showResults(context);
-                  i = index;
-                },
-
-                title: Text(listitem.nameOfSymptom.toString()),
-
-                // title: RichText(
-                //   text: TextSpan(
-                //     text:listitem.nameOfSymptom.substring(0,query.length),
-                //     style: TextStyle(
-                //       color: Colors.black,
-                //       fontWeight: FontWeight.bold,
-                //     ),
-                //     children: [
-                //       TextSpan(
-                //         text: listitem.medicineName.substring(query.length),
-                //         style: TextStyle(
-                //           color: Colors.grey,
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // )
+              return Card(
+                
+                elevation: 5,
+                child: ListTile(
+                  onTap: () {
+                    showResults(context);
+                    i = index;
+                  },
+                
+              contentPadding: EdgeInsets.all(8),
+                  title: Text(listitem.nameOfSymptom.toString()),
+              
+                  // title: RichText(
+                  //   text: TextSpan(
+                  //     text:listitem.nameOfSymptom.substring(0,query.length),
+                  //     style: TextStyle(
+                  //       color: Colors.black,
+                  //       fontWeight: FontWeight.bold,
+                  //     ),
+                  //     children: [
+                  //       TextSpan(
+                  //         text: listitem.medicineName.substring(query.length),
+                  //         style: TextStyle(
+                  //           color: Colors.grey,
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // )
+                ),
               );
             },
             itemCount: suggestionList.length,

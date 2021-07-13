@@ -1,5 +1,5 @@
 class Symptom {
-  List nameOfSymptom;
+  String nameOfSymptom;
   String possibleDiseases;
   String preventive;
   List hospital;
@@ -16,7 +16,7 @@ class Symptom {
 List <Symptom> symptoms(){
   return [
     Symptom(
-      nameOfSymptom: ['Weakness','Stomach Pain','Headache','Diarrhea','Loss of appetite,'],
+      nameOfSymptom: 'Weakness,Stomach Pain,Headache,Diarrhea,Loss of appetite,',
       possibleDiseases: 'Typhoid fever, paratyphoid fever',
       preventive: '''•	Wash your hands. Frequent hand-washing in hot, soapy water is the best way to control infection. Wash before eating or preparing food and after using the toilet. Carry an alcohol-based hand sanitizer for times when water isn't available.
 •	Avoid drinking untreated water. Contaminated drinking water is a particular problem in areas where typhoid fever is endemic. For that reason, drink only bottled water or canned or bottled carbonated beverages, wine and beer. Carbonated bottled water is safer than non-carbonated bottled water.
@@ -29,7 +29,7 @@ Ask for drinks without ice. Use bottled water to brush your teeth, and try not t
     doctor: 'Dr. Binkel Kheral, Dr. Samrat Paudel, Dr. Uttam Pradhan,', 
     ),
     Symptom(
-      nameOfSymptom: ['a cough','difficulty breathing','rapid heartbeat','high temperature','sweating and shivering'],
+      nameOfSymptom: 'a cough,difficulty breathing,rapid heartbeat,high temperature,sweating and shivering',
       possibleDiseases: 'pneumonia',
       preventive: '''•	Wash your hands regularly, especially after you go to the bathroom and before you eat.\n
 •	Eat right, with plenty of fruits and vegetables.\n
@@ -42,7 +42,7 @@ Ask for drinks without ice. Use bottled water to brush your teeth, and try not t
       doctor: 'Dr. Pukar Bajgain, Dr.Prakash Tajpuriya',
     ),
     Symptom(
-      nameOfSymptom: ['fever', 'fatigue', 'loss of appetite', 'nausea', 'vomiting', 'abdominal pain', 'dark urine', 'light-colored stools', 'joint pain', 'jaundice'],
+      nameOfSymptom: 'fever, fatigue, loss of appetite, nausea, vomiting, abdominal pain, dark urine, light-colored stools, joint pain, jaundice',
       possibleDiseases: 'hepatitis',
       preventive: '''•	Get the vaccines for hepatitis A and hepatitis B.\n
 •	Use a condom during sex.\n
@@ -54,7 +54,7 @@ Ask for drinks without ice. Use bottled water to brush your teeth, and try not t
       doctor: 'Dr. Rojen Maharjan, Dr. Nirnaya Dangol',
     ),
     Symptom(
-      nameOfSymptom: ['fever','dry cough','tiredness','aches and pains','sore throat','diarrhoea','headache','difficulty breathing','chest pain','loss of speech'],
+      nameOfSymptom: 'fever,dry cough,tiredness,aches and pains,sore throat,diarrhoea,headache,difficulty breathing, chest pain, loss of speech',
       possibleDiseases: 'COVID-19',
       preventive: '''•	Clean your hands often. Use soap and water, or an alcohol-based hand rub.\n
 •	Maintain a safe distance from anyone who is coughing or sneezing.\n
@@ -68,7 +68,7 @@ Ask for drinks without ice. Use bottled water to brush your teeth, and try not t
       doctor: 'Dr. Siddhartha Mishra, Pratik Silwal',
     ),
     Symptom(
-      nameOfSymptom: ['headache','loss of appetite','tiredness','fever'],
+      nameOfSymptom: 'headache,loss of appetite,tiredness,fever',
       possibleDiseases: 'chickenpox',
       preventive: '''The best way to prevent chickenpox is to get the chickenpox vaccine. Everyone—including children, adolescents, and adults—should get two doses of chickenpox vaccine if they have never had chickenpox or were never vaccinated.
 
@@ -79,7 +79,7 @@ The chickenpox vaccine prevents almost all cases of severe illness. Since the va
       doctor: 'Dr. Suzata Bhattarai, Dr. Nischal Kheral',
     ),
     Symptom(
-      nameOfSymptom: ['fever','chills','abdominal pain','flu-like symptoms','change in skin color','dark-colored urine'],
+      nameOfSymptom: 'fever,chills,abdominal pain,flu-like symptoms,change in skin color,dark-colored urine',
       possibleDiseases: 'jaundice',
       preventive: '''•	Avoid hepatitis infection.\n
 •	Stay within recommended alcohol limits.\n
