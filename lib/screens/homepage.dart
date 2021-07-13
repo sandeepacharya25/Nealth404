@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                   height: 50,
                 ),
                 Text(
-                  "Good Morning, Olivia",
+                  "Good Morning, Priya",
                   style: GoogleFonts.poppins(fontWeight: FontWeight.w300),
                 ),
                 SizedBox(

@@ -1,8 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hackathon/screens/bloodBank.dart';
 import 'package:hackathon/screens/emergency.dart';
 import 'package:hackathon/screens/homepage.dart';
 import 'package:hackathon/screens/pharmacy.dart';
+import 'package:hackathon/screens/profile.dart';
 void main() {
   runApp(MyApp());
 }
@@ -33,8 +35,8 @@ class _NavigationBarState extends State<NavigationBar> {
     HomePage(),
     Pharmacy(),
     Text("data"),
-    Text('next'),
-    Text('next'),
+    BloodBank(),
+    Profile(),
   ];
 
   void _onItemTapped(int index) {
