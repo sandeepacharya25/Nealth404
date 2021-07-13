@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hackathon/screens/bloodBank.dart';
 import 'package:hackathon/screens/emergency.dart';
 import 'package:hackathon/screens/homepage.dart';
@@ -67,11 +68,18 @@ class _NavigationBarState extends State<NavigationBar> {
             },
             elevation: 2.0,
             fillColor: Colors.red,
-            child: Icon(
-              Icons.add,
-              size: 40.0,
+            child:Text("E",
+            style: GoogleFonts.poppins(
+              fontWeight:FontWeight.bold,
               color: Colors.white,
+              fontSize: 30
             ),
+            ),
+            //  Icon(
+            //   Icons.add,
+            //   size: 40.0,
+            //   color: Colors.white,
+            // ),
             padding: EdgeInsets.all(15.0),
             shape: CircleBorder(),
           ),
